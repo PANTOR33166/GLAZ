@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glaz - Tienda Online</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="Imagenes/flavicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+  <div class="Menudenavegacion">
+    <header class="header">
+      <div class="logo">
+        <h1>GLAZ</h1>
+      </div>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="page/tienda.html">Tienda</a></li>
+          <li><a href="page/lookbook.html">Lookbook</a></li>
+          <li><a href="page/nosotros.html">Nosotros</a></li>
+          <li><a href="page/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Ícono para abrir carrito lateral -->
+      <label for="toggle-carrito" class="icono-carrito">
+        <i class="fas fa-shopping-cart"></i>
+      </label>
+    </header>
+  </div>
+
+  <!-- Checkbox que controla el carrito -->
+  <input type="checkbox" id="toggle-carrito" hidden>
+
+  <!-- Panel lateral del carrito -->
+  <div class="carrito-lateral">
+    <div class="carrito-header">
+      <h3>Tu carrito</h3>
+      <label for="toggle-carrito" class="cerrar-carrito"><i class="fas fa-times"></i></label>
+    </div>
+    <div class="carrito-contenido">
+      <p>Tu carrito está vacío.</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- Sección de banner -->
+    <section class="banner">
+      <div class="banner-content">
+        <h1 class="titulo-principal">Indumentaria Glaz</h1>
+        <p>Encontra tu prenda y llevatela al mejor precio</p>
+      </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section>
+      <div class="destacados">
+        <h2>Productos Destacados</h2>
+      </div>
+      <div class="container">
+        <div class="producto">
+          <img src="Imagenes/producto-1.jpg" alt="Indumentaria 1">
+          <h3>Camisa de Lino</h3>
+          <button class="boton-carrito-index">
+            <i class="fas fa-shopping-cart"></i> Agregar al carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="Imagenes/camisa.jpg" alt="Indumentaria 2">
+          <h3>Camisa oversize</h3>
+          <button class="boton-carrito-index">
+            <i class="fas fa-shopping-cart"></i> Agregar al carrito
+          </button>
+        </div>
+        <div class="producto">
+          <img src="Imagenes/cargo.jpg" alt="Indumentaria 3">
+          <h3>Pantalón Wide Leg</h3>
+          <button class="boton-carrito-index">
+            <i class="fas fa-shopping-cart"></i> Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección CTA -->
+    <section class="cta">
+      <div class="division">
+        <h2>Indumentaria unisex con estilo</h2>
+        <p>Elegi tu prenda y llevatela. Descubrí lo nuevo de Glaz.</p>
+        <a href="page/tienda.html" class="btn">Explorar Tienda</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contenido">
+      <p>&copy; 2025 Glaz - Todos los derechos reservados</p>
+      
+      <div class="redes-sociales">
+        <p class="texto-redes">Seguinos en nuestras redes sociales:</p>
+        <div class="iconos-redes">
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i> Facebook
+          </a>
+        </div>
+      </div>
+
+      <div class="contacto-footer">
+        <p><i class="fas fa-envelope"></i> contacto@glaz.com</p>
+        <p><i class="fas fa-phone"></i> +54 11 1234 5678</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

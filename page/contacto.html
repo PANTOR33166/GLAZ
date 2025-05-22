@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Glaz</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="../Imagenes/flavicon.png" type="image/png">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+        <h1>GLAZ</h1>
+    </div>
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li> 
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="lookbook.html">Lookbook</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="carrito-header">
+        <a href="carrito.html">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+    </div>
+  </header>
+
+    <main>
+        <section class="contacto-descripcion">
+            <p>¡Nos encantaría saber de vos! Completá el siguiente formulario y nos pondremos en contacto.</p>
+            <form class="form" action="https://formspree.io/f/mgerdjke" method="POST">
+                <div class="form_container">
+                    <h2 class="form_title">Contactame</h2>
+                    <input type="text" class="form_input" placeholder="Nombre:" name="name" required>
+                    <input type="email" class="form_input" placeholder="Email:" name="_replyto" required>
+                    <textarea class="form_input form_input--message" placeholder="Mensaje:" name="message" required></textarea>
+                    <button type="submit" class="form_cta">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-contenido">
+            <p>&copy; 2025 Glaz - Todos los derechos reservados</p>
+            
+            <div class="redes-sociales">
+                <p class="texto-redes">Seguinos en nuestras redes sociales:</p>
+                <div class="iconos-redes">
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                </div>
+            </div>
+    
+            <div class="contacto-footer">
+                <p><i class="fas fa-envelope"></i> contacto@glaz.com</p>
+                <p><i class="fas fa-phone"></i> +54 11 1234 5678</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
