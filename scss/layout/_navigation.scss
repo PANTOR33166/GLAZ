@@ -1,0 +1,20 @@
+nav.menu-principal {
+  display: flex;
+  gap: 25px;
+
+  a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}

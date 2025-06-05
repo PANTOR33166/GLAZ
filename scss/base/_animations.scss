@@ -1,0 +1,27 @@
+// base/_animations.scss
+
+.zoom-img {
+  overflow: hidden;
+
+  img {
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+
+  .imagen-con-texto img,
+    .producto img {
+    transition: transform 0.3s ease;
+}
+
+  .imagen-con-texto img:hover,
+    .producto img:hover {
+    transform: scale(1.05);
+}
+
+}

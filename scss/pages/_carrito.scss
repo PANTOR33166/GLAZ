@@ -1,0 +1,54 @@
+.seccion-carrito {
+  padding: 60px 20px;
+  background-color: #fff;
+
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .lista-carrito {
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+
+    .item-carrito {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .precio {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .total-carrito {
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 768px) {
+    .item-carrito {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .total-carrito {
+      text-align: center;
+    }
+  }
+}

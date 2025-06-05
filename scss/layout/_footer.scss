@@ -1,0 +1,39 @@
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+
+  .contenedor-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .redes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+
+      a {
+        color: #fff;
+        font-size: 1.3rem;
+
+        &:hover {
+          color: #bbb;
+        }
+      }
+    }
+
+    .info-contacto {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .redes {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}

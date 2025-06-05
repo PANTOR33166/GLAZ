@@ -1,0 +1,32 @@
+.seccion-home {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+
+  .banner {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .presentacion {
+    margin: 40px auto;
+    max-width: 800px;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  @media screen and (max-width: 768px) {
+    .presentacion {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  }
+}

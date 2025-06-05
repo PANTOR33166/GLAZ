@@ -1,0 +1,22 @@
+// === MEDIA QUERIES MIXINS ===
+
+// Mobile
+@mixin mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+// Tablet
+@mixin tablet {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+// Desktop
+@mixin desktop {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}

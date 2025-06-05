@@ -1136,7 +1136,7 @@ footer {
   size-adjust: auto;
 }
 
-@import url('https://fonts.poogleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.Googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 
 *{
@@ -1711,64 +1711,45 @@ footer {
   }
 }
 
-  /* ===== SECCION TIENDA MEDIA ===== */
-
-@media screen and (max-width: 768px) {
+  /* ==== SECCIÓN TIENDA  ==== */
+  @media screen and (max-width: 768px) {
   .seccion-tienda .colecciones {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 20px 10px;
   }
 
   .seccion-tienda .card {
-    width: 90%;
+      width: 90%;
   }
 
-  .seccion-tienda .categoria-overlay {
-    font-size: 1em;
-    padding: 8px;
+  .imagen-con-texto img {
+      width: 100%;
+      height: auto;
   }
 
-  .seccion-tienda .ver-coleccion-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+  .categoria-overlay {
+      font-size: 1em;
+      margin-top: 10px;
   }
 
-  .seccion-tienda .boton-tienda {
-    width: 80%;
-    text-align: center;
-    padding: 12px 0;
+  .boton-container {
+      margin-top: 10px;
+  }
+
+  .boton-tienda {
+      width: 100%;
+      padding: 12px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .seccion-tienda .ver-coleccion-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 20px;
+    }
   }
 }
-
-@media screen and (max-width: 768px) {
-  .colecciones {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 10px;
-  }
-
-  .colecciones .card {
-    width: 90%;
-  }
-
-  .colecciones .imagen-con-texto img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .card .boton-container {
-    padding: 15px 0;
-  }
-
-  .card .boton-tienda {
-    width: 80%;
-    padding: 12px 0;
-    display: inline-block;
-  }
-} 
