@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Glaz - Lookbook</title>
+  <title>Carrito - Glaz</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="icon" href="../Imagenes/flavicon.png" type="image/png">
@@ -25,61 +25,16 @@
     <div class="carrito-header">
         <a href="carrito.html">
             <i class="fas fa-shopping-cart"></i>
+            <span id="cantidad-carrito">0</span>
         </a>
     </div>
   </header>
 
-  <main class="lookbook-main">
-    <section class="lookbook">
-      <div class="lookbook-titulo">
-        <h2>Conjuntos Unisex</h2>
-        <p>Combina tus prendas favoritas y creá looks únicos para vos</p>
-      </div>
-      <div class="lookbook-grid">
-        <div class="lookbook-item">
-          <img src="../Imagenes/conjunto-blanco.jpg" alt="Conjunto Blanco">
-          <h3>Conjunto Blanco</h3>
-          <button class="boton-carrito-index">
-            <i class="fas fa-shopping-cart"></i> Agregar al carrito
-          </button>
-        </div>
-        <div class="lookbook-item">
-          <img src="../Imagenes/conjunto-negro.jpg" alt="Conjunto Negro">
-          <h3>Conjunto Negro</h3>
-          <button class="boton-carrito-index">
-            <i class="fas fa-shopping-cart"></i> Agregar al carrito
-          </button>
-        </div>
-        <div class="lookbook-item">
-          <img src="../Imagenes/conjunto-rojo.jpg" alt="Conjunto Rojo">
-          <h3>Conjunto Rojo</h3>
-          <button class="boton-carrito-index">
-            <i class="fas fa-shopping-cart"></i> Agregar al carrito
-          </button>
-        </div>
-        <div class="lookbook-item">
-          <img src="../Imagenes/conjunto-azul.jpg" alt="Conjunto Azul">
-          <h3>Conjunto Azul</h3>
-          <button class="boton-carrito-index">
-            <i class="fas fa-shopping-cart"></i> Agregar al carrito
-          </button>
-        </div>
-        <div class="lookbook-item">
-          <img src="../Imagenes/conjunto-verde.jpg" alt="Conjunto Verde">
-          <h3>Conjunto Verde</h3>
-          <button class="boton-carrito-index">
-            <i class="fas fa-shopping-cart"></i> Agregar al carrito
-          </button>
-        </div>
-        <div class="lookbook-item">
-          <img src="../Imagenes/conjunto-beige.jpg" alt="Conjunto Beige">
-          <h3>Conjunto Beige</h3>
-          <button class="boton-carrito-index">
-            <i class="fas fa-shopping-cart"></i> Agregar al carrito
-          </button>
-        </div>
-      </div>
-    </section>
+  <main class="seccion-carrito">
+    <h2>Tu carrito de compras</h2>
+    <div id="contenido-carrito" class="carrito-contenido"></div>
+    <p class="carrito-total">Total: $<span id="total-carrito">0</span></p>
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
   </main>
 
   <footer class="footer">
@@ -94,5 +49,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="../js/tienda.js"></script>
 </body>
 </html>

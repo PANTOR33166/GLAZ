@@ -17,15 +17,16 @@
         <ul class="menu">
             <li><a href="../index.html">Inicio</a></li> 
             <li><a href="tienda.html">Tienda</a></li>
-            <li><a href="lookbook.html">Lookbook</a></li>
+            <li><a href="lookbook.html" class="activo">Lookbook</a></li>
             <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
     <div class="carrito-header">
-        <a href="carrito.html">
-            <i class="fas fa-shopping-cart"></i>
-        </a>
+      <a href="carrito.html">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cantidad-carrito">0</span>
+      </a>
     </div>
   </header>
 
@@ -39,42 +40,60 @@
         <div class="lookbook-item">
           <img src="../Imagenes/conjunto-blanco.jpg" alt="Conjunto Blanco">
           <h3>Conjunto Blanco</h3>
-          <button class="boton-carrito-index">
+          <button class="boton-carrito-index boton-agregar"
+                  data-nombre="Conjunto Blanco"
+                  data-precio="22000"
+                  data-imagen="../Imagenes/conjunto-blanco.jpg">
             <i class="fas fa-shopping-cart"></i> Agregar al carrito
           </button>
         </div>
         <div class="lookbook-item">
           <img src="../Imagenes/conjunto-negro.jpg" alt="Conjunto Negro">
           <h3>Conjunto Negro</h3>
-          <button class="boton-carrito-index">
+          <button class="boton-carrito-index boton-agregar"
+                  data-nombre="Conjunto Negro"
+                  data-precio="23000"
+                  data-imagen="../Imagenes/conjunto-negro.jpg">
             <i class="fas fa-shopping-cart"></i> Agregar al carrito
           </button>
         </div>
         <div class="lookbook-item">
           <img src="../Imagenes/conjunto-rojo.jpg" alt="Conjunto Rojo">
           <h3>Conjunto Rojo</h3>
-          <button class="boton-carrito-index">
+          <button class="boton-carrito-index boton-agregar"
+                  data-nombre="Conjunto Rojo"
+                  data-precio="21500"
+                  data-imagen="../Imagenes/conjunto-rojo.jpg">
             <i class="fas fa-shopping-cart"></i> Agregar al carrito
           </button>
         </div>
         <div class="lookbook-item">
           <img src="../Imagenes/conjunto-azul.jpg" alt="Conjunto Azul">
           <h3>Conjunto Azul</h3>
-          <button class="boton-carrito-index">
+          <button class="boton-carrito-index boton-agregar"
+                  data-nombre="Conjunto Azul"
+                  data-precio="21000"
+                  data-imagen="../Imagenes/conjunto-azul.jpg">
             <i class="fas fa-shopping-cart"></i> Agregar al carrito
           </button>
         </div>
         <div class="lookbook-item">
           <img src="../Imagenes/conjunto-verde.jpg" alt="Conjunto Verde">
           <h3>Conjunto Verde</h3>
-          <button class="boton-carrito-index">
+          <button class="boton-carrito-index boton-agregar"
+                  data-nombre="Conjunto Verde"
+                  data-precio="22500"
+                  data-imagen="../Imagenes/conjunto-verde.jpg">
             <i class="fas fa-shopping-cart"></i> Agregar al carrito
           </button>
         </div>
         <div class="lookbook-item">
           <img src="../Imagenes/conjunto-beige.jpg" alt="Conjunto Beige">
           <h3>Conjunto Beige</h3>
-          <button class="boton-carrito-index">
+          <button class="boton-carrito-index boton-agregar"
+                  data-nombre="Conjunto Beige"
+                  data-precio="24000"
+                  data-imagen="../Imagenes/conjunto-beige.jpg">
             <i class="fas fa-shopping-cart"></i> Agregar al carrito
           </button>
         </div>
@@ -104,5 +123,8 @@
         </div>
     </div>
   </footer>
+
+  <!-- JavaScript del carrito -->
+  <script src="../js/tienda.js"></script>
 </body>
 </html>

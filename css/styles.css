@@ -958,6 +958,54 @@ footer {
   font-size: 20px;
 }
 
+/* === CARRITO SIDEBAR === */
+
+.carrito-panel {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.carrito-panel.activo {
+  right: 0;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.carrito-header {
+  position: relative;
+  cursor: pointer;
+}
+
+.carrito-header #cantidad-carrito {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: crimson;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
 /* === CARRITO DE COMPRAS - ÍCONO EN HEADER === */
 .icono-carrito {
   cursor: pointer;
